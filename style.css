@@ -1,0 +1,94 @@
+/* FONT */
+@font-face {
+    font-family: 'ArsenicaTrial';
+    src: url('fonts/ArsenicaTrial-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* RIMUOVE SCROLLBAR E SPAZI BIANCHI */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* HEADER PRINCIPALE */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #c44d4a;
+    color: white;
+}
+
+/* BLOCCO SINISTRO */
+.home-icone {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* TESTO HEADER (space-between) */
+.testo-header {
+    font-family: 'ArsenicaTrial', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 80px; 
+}
+
+/* ICONE */
+.icone {
+    display: flex;
+    gap: 15px;
+}
+
+/* TITOLO A DESTRA */
+.title h1 {
+    margin: 0;
+    font-family: 'ArsenicaTrial', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* IMMAGINI */
+.lente,
+.menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.vortice {
+    width: 100%;
+    height: 1000px; /* altrimenti non si vede nulla */
+    background-image: url("resources/b.jpg");
+    background-size: cover;       /* riempie tutta la sezione */
+    background-position: center;  /* centra l’immagine */
+    display: flex;
+    justify-content: right;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.icone img {
+    filter: invert(1);
+}
+
+/* BOTTONI */
+.accedi{
+    font-family: 'ArsenicaTrial', sans-serif;
+    background-color: #c44d4a;
+    border: 0px;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+    border-radius: 20px;
+}
