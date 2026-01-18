@@ -1,94 +1,157 @@
-/* FONT */
+/* =========================
+   FONT PERSONALIZZATI
+   ========================= */
+
+/* Font Arsenica - usato per titolo */
 @font-face {
     font-family: 'ArsenicaTrial';
     src: url('fonts/ArsenicaTrial-Bold.woff') format('woff');
+    font-weight: 700;      /* versione bold */
+    font-style: normal;
+}
+
+/* Font Afacad Bold - usato per testi e menu */
+@font-face {
+    font-family: 'AfacadBold';
+    src: url('fonts/AfacadBold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
-/* RIMUOVE SCROLLBAR E SPAZI BIANCHI */
+
+/* =========================
+   RESET BASE
+   ========================= */
+
+/* 
+   Imposta box-sizing su border-box per tutti gli elementi:
+   padding e bordo vengono inclusi nelle dimensioni
+*/
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Rimuove il margine di default del browser */
 body {
     margin: 0;
 }
 
-/* HEADER PRINCIPALE */
+
+/* =========================
+   HEADER PRINCIPALE
+   ========================= */
+
+/* Contenitore principale dell’header */
 .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;                    /* layout orizzontale */
+    justify-content: space-between;   /* elementi agli estremi */
+    align-items: center;              /* allineamento verticale */
     padding: 20px;
-    background-color: #c44d4a;
-    color: white;
+    background-color: #c44d4a;        /* colore di sfondo */
+    color: white;                     /* colore testo */
 }
 
-/* BLOCCO SINISTRO */
+
+/* =========================
+   BLOCCO SINISTRO HEADER
+   ========================= */
+
+/* Contiene icona home + testi */
 .home-icone {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    align-items: center;  /* centra verticalmente */
+    gap: 30px;            /* spazio tra gli elementi */
 }
 
-/* TESTO HEADER (space-between) */
+
+/* =========================
+   TESTO HEADER
+   ========================= */
+
+/* Menu testuale (es. link di navigazione) */
 .testo-header {
-    font-family: 'ArsenicaTrial', sans-serif;
+    font-family: AfacadBold, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    display: flex;
-    gap: 80px; 
+    display: flex;        /* disposizione in riga */
+    gap: 80px;            /* spazio tra le voci */
 }
 
-/* ICONE */
+
+/* =========================
+   ICONE HEADER
+   ========================= */
+
+/* Contenitore delle icone */
 .icone {
     display: flex;
-    gap: 15px;
+    gap: 15px;            /* spazio tra le icone */
 }
 
-/* TITOLO A DESTRA */
+/* Inverte il colore delle icone (utile su sfondo scuro) */
+.icone img {
+    filter: invert(1);
+}
+
+
+/* =========================
+   TITOLO A DESTRA
+   ========================= */
+
+/* Titolo principale dell’header */
 .title h1 {
-    margin: 0;
+    margin: 0;                               /* rimuove margine default */
     font-family: 'ArsenicaTrial', sans-serif;
     font-size: 45px;
     font-weight: 700;
 }
 
-/* IMMAGINI */
+
+/* =========================
+   IMMAGINI / ICONE
+   ========================= */
+
+/* Icona lente e menu */
 .lente,
 .menu {
     width: 40px;
     height: 40px;
-    cursor: pointer;
+    cursor: pointer;   /* cursore a mano */
 }
 
+
+/* =========================
+   SEZIONE BACKGROUND
+   ========================= */
+
+/* Sezione con immagine di sfondo */
 .vortice {
     width: 100%;
-    height: 1000px; /* altrimenti non si vede nulla */
+    height: 1000px; /* altezza fissa per rendere visibile l’immagine */
+    
     background-image: url("resources/b.jpg");
     background-size: cover;       /* riempie tutta la sezione */
     background-position: center;  /* centra l’immagine */
+
     display: flex;
-    justify-content: right;
+    justify-content: right;       /* contenuto a destra */
     padding-top: 50px;
     padding-right: 50px;
 }
 
-.icone img {
-    filter: invert(1);
-}
 
-/* BOTTONI */
-.accedi{
-    font-family: 'ArsenicaTrial', sans-serif;
+/* =========================
+   BOTTONI
+   ========================= */
+
+/* Bottone "Accedi" */
+.accedi {
+    font-family: 'AfacadBold', sans-serif;
     background-color: #c44d4a;
-    border: 0px;
-    padding: 12px;
-    padding-left: 35px;
-    padding-right: 35px;
+    border: 0;                     /* rimuove il bordo */
+    padding: 12px 35px;            /* verticale | orizzontale */
     color: white;
-    border-radius: 20px;
+    border-radius: 20px;           /* angoli arrotondati */
 }
