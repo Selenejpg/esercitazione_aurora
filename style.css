@@ -155,3 +155,69 @@ body {
     color: white;
     border-radius: 20px;           /* angoli arrotondati */
 }
+
+
+.layout{
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;            
+}
+
+
+.testo{
+  margin-left: 64px;
+  margin-top: 229px;
+  flex: 0 0 40%;     
+}
+
+
+.titolo.paragrafo {
+  font-family: 'ArsenicaTrial', sans-serif; 
+  font-size: 30px;
+  font-weight: bold;
+  color: #c44d4a;
+  margin-left: 64px;
+  margin-top: 229px;
+  text-align: left;
+}
+
+
+.sottotitolo {
+  margin: 0;
+  margin-top: 4px;
+  margin-left: 64px;
+  font-family: 'AfacadSemiBoldItalic', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #c44d4a;
+  text-align: left;
+}
+
+
+.paragrafo1 {
+  font-family: 'AfacadRegular', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #c44d4a;
+  margin-left: 64px;
+  margin-top: 16px;
+  max-width: 501px;
+  text-align: left;
+}
+
+
+.immagine1 {
+  width: 879px;
+  height: 902px;
+  margin-left: auto;   
+  margin-top: 229px;   
+  opacity: 0.7;
+}
+
+.immagine1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
