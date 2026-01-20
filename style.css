@@ -50,7 +50,7 @@ body {
     align-items: center;              /* allineamento verticale */
     padding: 20px;
     background-color: #c44d4a;        /* colore di sfondo */
-    color: white;                     /* colore testo */
+    color: #fffef6;                     /* colore testo */
 }
 
 
@@ -152,26 +152,27 @@ body {
     background-color: #c44d4a;
     border: 0;                     /* rimuove il bordo */
     padding: 12px 35px;            /* verticale | orizzontale */
-    color: white;
+    color: #fffef6;
     border-radius: 20px;           /* angoli arrotondati */
 }
 
 
-.layout{
+.layout1 {
   display: flex;
   align-items: flex-start;
-  gap: 40px;            
+  gap: 40px;
+  background-color: #fffef6;        
 }
 
 
-.testo{
+.testo1 {
   margin-left: 64px;
   margin-top: 229px;
   flex: 0 0 40%;     
 }
 
 
-.titolo.paragrafo {
+.titolo1 {
   font-family: 'ArsenicaTrial', sans-serif; 
   font-size: 30px;
   font-weight: bold;
@@ -182,7 +183,7 @@ body {
 }
 
 
-.sottotitolo {
+.sottotitolo1 {
   margin: 0;
   margin-top: 4px;
   margin-left: 64px;
@@ -197,7 +198,7 @@ body {
 
 .paragrafo1 {
   font-family: 'AfacadRegular', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   color: #c44d4a;
   margin-left: 64px;
@@ -213,11 +214,70 @@ body {
   margin-left: auto;   
   margin-top: 229px;   
   opacity: 0.7;
-}
-
-.immagine1 img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
+}
+
+
+.layout2 {
+  background-color: #fffef6; 
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;       
+} 
+
+
+.immagine2 {
+  width: 504px;
+  height: 838px;
+  margin-left: 185px;
+  opacity: 0.7;
+}
+
+
+.testo2 {
+  flex: 1;
+  min-width: 0;  
+  padding-top: 90px;
+  padding-right: 120px;
+  margin-left: 670px;
+}
+
+
+.titolo2 {
+  font-family: 'ArsenicaTrial', sans-serif; 
+  font-size: 45px;
+  font-weight: bold;
+  color: #c44d4a;  
+  margin: 0;
+}
+
+
+.sottotitolo2 {
+  font-family: 'AfacadSemiBoldItalic', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  color: #c44d4a; 
+  margin-top: 12px;
+}
+
+
+.paragrafi {
+  margin-top: 80px; 
+  margin-left: auto;      
+  max-width: 620px;       
+  display: flex;
+  flex-direction: column;
+  gap: 26px;              
+  color: #c44d4a;
+}
+
+
+.paragrafi p {
+  margin: 0;              
+  font-family: "AfacadRegular", sans-serif;
+  font-style: normal;
+  font-size: 18px;      
+  line-height: 1.7;
 }
