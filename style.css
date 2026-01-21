@@ -281,3 +281,89 @@ body {
   font-size: 18px;      
   line-height: 1.7;
 }
+
+
+.layout3 {
+  background-color: #fffef6; 
+   display: flex;
+  gap: 348px;                  
+  padding: 80px 90px;         
+  min-height: 100vh;
+  position: relative;              
+}
+
+
+.testo3 {
+  flex: 0 0 42%;              
+  color: #c44d4a;
+}
+
+
+.titolo3 h2 {
+  font-family: 'ArsenicaTrial', sans-serif; 
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.sottotitolo3 h3 {
+  font-family: 'AfacadSemiBoldItalic', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+   margin: 8px 0 0 0;
+}
+
+
+.paragrafi3 {
+  margin-top: 80px;           
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                  
+  max-width: 520px;           
+  font-family: "AfacadRegular", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+.colonnadestra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+
+.immagine3 {
+  position: absolute;    
+  top: 0;                
+  right: 0; 
+  object-fit: cover;          
+  display: block;
+  opacity: 0.7;              
+  overflow: hidden;
+}
+
+
+.immagine3 img {
+  width: 105%;
+  height: auto;
+  object-fit: contain;
+  transform: translateX(-5%);
+  margin-bottom: 120px;
+}
+
+
+.testodestra {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 620px;
+  margin: 0;
+  margin-top: 548px;
+  font-family: "AfacadRegular", sans-serif;
+  font-size: 18px;
+  color: #c44d4a;
+  line-height: 1.7; 
+}
