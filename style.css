@@ -151,9 +151,9 @@ body {
     font-family: 'AfacadBold', sans-serif;
     background-color: #c44d4a;
     border: 0;                     /* rimuove il bordo */
-    padding: 12px 35px;            /* verticale | orizzontale */
+    padding: 15px 40px;            /* verticale | orizzontale */
     color: #fffef6;
-    border-radius: 20px;           /* angoli arrotondati */
+    border-radius: 30px;           /* angoli arrotondati */
 }
 
 
@@ -366,4 +366,222 @@ body {
   font-size: 18px;
   color: #c44d4a;
   line-height: 1.7; 
+}
+
+
+.section-footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fffef6;
+}
+
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+
+.footer-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  display: block;
+}
+
+
+.footer-box {
+  position: absolute;
+  bottom: 20px;            
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 2200px;
+  height: 350px;
+  background-color: #fffef6;
+  border-radius: 16px;
+}
+
+
+.parte-superiore {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.colonna-sx {
+  display: flex;
+}
+
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: "AfacadSemiBold", sans-serif;
+  font-size: 18px;
+  color: #C44D4A;
+  cursor: pointer;
+}
+
+
+.colonna-dx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 60px;
+  margin-top: -170px;
+}
+
+
+.footer-button {
+  background: #C44D4A;
+  color: #fffef6;
+  border: 0;
+  border-radius: 30px;
+  padding: 15px 40px;
+  align-self: flex-start;
+  margin-left: 1600px;   
+}
+
+
+.footer-newsletter {
+  display: flex;
+  align-items: flex-end;  
+  gap: 12px;
+}
+
+
+.newsletter-content {
+  display: flex;
+  gap: 10px;
+  align-self: flex-start;
+  margin-left: 1575px;
+}
+
+
+.newsletter-text {
+  font-family: "AfacadItalic", sans-serif;
+  font-style: italic;
+  color: #C44D4A;
+  margin-bottom: 4px;
+}
+
+
+.newsletter-line {
+  width: 344px;
+  height: 3px;
+  background: #C44D4A;
+}
+
+
+.newsletter-arrow {
+  width: 25px;
+  height: 25px;
+}
+
+
+.newsletter-arrow img {
+  width: 25px;
+  height: 15px; 
+  align-items: center;
+  justify-content: center;
+  margin-left: 357px;
+  display: flex;
+}
+
+
+.footer-box {
+  position: absolute;
+}
+
+
+.footer-FAQS {
+  font-family: "AfacadSemiBold", sans-serif;
+  font-size: 14px;
+  color: #C44D4A;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 140px;   
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 12px;                 
+}
+
+
+.line-FAQS {
+  position: absolute;
+  bottom: 110px;         /* distanza dal fondo → regolabile */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 60px);
+  height: 1.5px;
+  background-color: #C44D4A;
+}
+
+
+.parte-inferiore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 27px;     /* stesso bordo sinistra/destra */
+  margin-top: 18px;    /* distanza dalla linea sopra */
+}
+
+
+.nome-sito {
+  color: #c44d4a;
+  font-family: 'ArsenicaTrial', sans-serif; 
+  font-size: 11px;
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.copyright {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  white-space: nowrap;
+  color: #C44D4A;
+  font-family: "AfacadSemiBold", sans-serif;
+  font-size: 14px;
+}
+
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 14px; 
+  margin-top: 82px;
+}
+
+
+.social-icon {
+  align-items: center;
+  justify-content: center;
+}
+
+
+.social-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
