@@ -363,6 +363,7 @@ body {
   font-family: "AfacadRegular", sans-serif;
   font-size: 18px;
   line-height: 1.7;
+  width: 80%;
 }
 
 .media-text-paragrafi p{
@@ -372,7 +373,7 @@ body {
 }
 
 .media-text-immagine{
-  width: 100%;
+  width: 55%;
   height: auto;
   opacity: 0.7;
   overflow: hidden;
