@@ -4,18 +4,19 @@
 
 /* Font Arsenica - usato per titolo */
 @font-face {
-    font-family: 'ArsenicaTrial';
-    src: url('fonts/ArsenicaTrial-Bold.woff') format('woff');
-    font-weight: 700;      /* versione bold */
-    font-style: normal;
+  font-family: 'ArsenicaTrial';
+  src: url('fonts/ArsenicaTrial-Bold.woff') format('woff');
+  font-weight: 700;
+  /* versione bold */
+  font-style: normal;
 }
 
 /* Font Afacad Bold - usato per testi e menu */
 @font-face {
-    font-family: 'AfacadBold';
-    src: url('fonts/AfacadBold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'AfacadBold';
+  src: url('fonts/AfacadBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -30,12 +31,12 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Rimuove il margine di default del browser */
 body {
-    margin: 0;
+  margin: 0;
 }
 
 
@@ -45,12 +46,17 @@ body {
 
 /* Contenitore principale dell’header */
 .section-header {
-    display: flex;                    /* layout orizzontale */
-    justify-content: space-between;   /* elementi agli estremi */
-    align-items: center;              /* allineamento verticale */
-    padding: 20px;
-    background-color: #c44d4a;        /* colore di sfondo */
-    color: #fffef6;                     /* colore testo */
+  display: flex;
+  /* layout orizzontale */
+  justify-content: space-between;
+  /* elementi agli estremi */
+  align-items: center;
+  /* allineamento verticale */
+  padding: 20px;
+  background-color: #c44d4a;
+  /* colore di sfondo */
+  color: #fffef6;
+  /* colore testo */
 }
 
 
@@ -60,9 +66,12 @@ body {
 
 /* Contiene icona home + testi */
 .home-icone {
-    display: flex;
-    align-items: center;  /* centra verticalmente */
-    gap: 30px;            /* spazio tra gli elementi */
+  display: flex;
+  align-items: center;
+  /* centra verticalmente */
+  gap: 30px;
+  /* spazio tra gli elementi */
+  margin-top: 23px;
 }
 
 
@@ -72,11 +81,13 @@ body {
 
 /* Menu testuale (es. link di navigazione) */
 .testo-header {
-    font-family: AfacadBold, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;        /* disposizione in riga */
-    gap: 80px;            /* spazio tra le voci */
+  font-family: AfacadBold, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  /* disposizione in riga */
+  gap: 80px;
+  /* spazio tra le voci */
 }
 
 
@@ -86,13 +97,14 @@ body {
 
 /* Contenitore delle icone */
 .icone {
-    display: flex;
-    gap: 15px;            /* spazio tra le icone */
+  display: flex;
+  gap: 15px;
+  /* spazio tra le icone */
 }
 
 /* Inverte il colore delle icone (utile su sfondo scuro) */
 .icone img {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 
@@ -102,10 +114,11 @@ body {
 
 /* Titolo principale dell’header */
 .title h1 {
-    margin: 0;                               /* rimuove margine default */
-    font-family: 'ArsenicaTrial', sans-serif;
-    font-size: 45px;
-    font-weight: 700;
+  margin: 0;
+  /* rimuove margine default */
+  font-family: 'ArsenicaTrial', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 
@@ -116,9 +129,10 @@ body {
 /* Icona lente e menu */
 .lente,
 .menu {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;   /* cursore a mano */
+  width: 25px;
+  height: 40px;
+  cursor: pointer;
+  /* cursore a mano */
 }
 
 
@@ -128,19 +142,22 @@ body {
 
 /* Sezione con immagine di sfondo */
 .vortice {
-    width: 100%;
-    height: 1000px; /* altezza fissa per rendere visibile l’immagine */
-    
-    background-image: url("resources/b.jpg");
-    background-size: cover;       /* riempie tutta la sezione */
-    background-position: center;  /* centra l’immagine */
+  width: 100%;
+  height: 1000px;
+  /* altezza fissa per rendere visibile l’immagine */
 
-    display: flex;
-    justify-content: right;       /* contenuto a destra */
-    padding-top: 50px;
-    padding-right: 50px;
+  background-image: url("resources/b.jpeg");
+  background-size: cover;
+  /* riempie tutta la sezione */
+  background-position: center;
+  /* centra l’immagine */
+
+  display: flex;
+  justify-content: right;
+  /* contenuto a destra */
+  padding-top: 50px;
+  padding-right: 50px;
 }
-
 
 /* =========================
    BOTTONI
@@ -148,32 +165,37 @@ body {
 
 /* Bottone "Accedi" */
 .accedi {
-    font-family: 'AfacadBold', sans-serif;
-    background-color: #c44d4a;
-    border: 0;                     /* rimuove il bordo */
-    padding: 15px 40px;            /* verticale | orizzontale */
-    color: #fffef6;
-    border-radius: 30px;           /* angoli arrotondati */
+  font-family: 'AfacadBold', sans-serif;
+  background-color: #c44d4a; 
+  border: 0;
+  /* rimuove il bordo */
+  padding: 15px 40px;
+  /* verticale | orizzontale */
+  color: #fffef6;
+  border-radius: 30px;
+  z-index: 2;
+  /* angoli arrotondati */
 }
 
 
-.layout1 {
+.sezione-calo-lettori {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
-  background-color: #fffef6;        
+  background-color: #fffef6;
 }
 
 
-.testo1 {
+.paragrafo-calo-lettori {
+  width: 100%;
+  height: auto;
   margin-left: 64px;
-  margin-top: 229px;
-  flex: 0 0 40%;     
+  align-items: flex-start;
 }
 
 
-.titolo1 {
-  font-family: 'ArsenicaTrial', sans-serif; 
+.titolo-calo-lettori {
+  font-family: 'ArsenicaTrial', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #c44d4a;
@@ -182,8 +204,12 @@ body {
   text-align: left;
 }
 
+.titolo-calo-lettori-testo{
+  margin: 0;
+}
 
-.sottotitolo1 {
+
+.sottotitolo-calo-lettori {
   margin: 0;
   margin-top: 4px;
   margin-left: 64px;
@@ -195,8 +221,13 @@ body {
   text-align: left;
 }
 
+.sottotitolo-calo-lettori-testo{
+  margin: 0;
+  padding-bottom: 15px;
+}
 
-.paragrafo1 {
+
+.testo-calo-lettori {
   font-family: 'AfacadRegular', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -207,166 +238,176 @@ body {
   text-align: left;
 }
 
-
-.immagine1 {
-  width: 879px;
-  height: 902px;
-  margin-left: auto;   
-  margin-top: 229px;   
-  opacity: 0.7;
-  object-fit: cover;
-  display: block;
+.testo-calo-lettori-par1, 
+.testo-calo-lettori-par2, 
+.testo-calo-lettori-par3 {
+  padding-bottom: 15px;
 }
 
+.book-shelf-div {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-top: 229px;
+  object-fit: cover;
+  display: block;
+  align-items: flex-end;
+}
 
-.layout2 {
-  background-color: #fffef6; 
+.book-shelf-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.prezzo-libri-section {
+  width: 100%;
+  height: auto;
+  background-color: #fffef6;
   display: flex;
-  align-items: flex-start;
-  gap: 20px;       
-} 
+  justify-content: space-between;
+}
 
-
-.immagine2 {
-  width: 504px;
-  height: 838px;
+.pila-libri {
+  width: 100%;
+  height: auto;
   margin-left: 185px;
   opacity: 0.7;
 }
 
-
-.testo2 {
-  flex: 1;
-  min-width: 0;  
-  padding-top: 90px;
-  padding-right: 120px;
-  margin-left: 670px;
+.prezzo-libri-text{
+  min-width: 0;
+  margin-top: 65px;
 }
-
-
-.titolo2 {
-  font-family: 'ArsenicaTrial', sans-serif; 
-  font-size: 45px;
+.prezzo-libri-titolo {
+  font-family: 'ArsenicaTrial', sans-serif;
+  font-size: 40px;
   font-weight: bold;
-  color: #c44d4a;  
+  color: #c44d4a;
   margin: 0;
 }
 
-
-.sottotitolo2 {
+.prezzo-libri-sottotitolo {
   font-family: 'AfacadSemiBoldItalic', sans-serif;
-  font-size: 25px;
+  margin: 0;
+  font-size: 32px;
   font-weight: 700;
   font-style: italic;
-  color: #c44d4a; 
-  margin-top: 12px;
-}
-
-
-.paragrafi {
-  margin-top: 80px; 
-  margin-left: auto;      
-  max-width: 620px;       
-  display: flex;
-  flex-direction: column;
-  gap: 26px;              
   color: #c44d4a;
 }
 
+.prezzo-libri-paragrafi {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  color: #c44d4a;
+  margin-top: 40px;
+}
 
-.paragrafi p {
-  margin: 0;              
+.prezzo-libri-par1,
+.prezzo-libri-par2,
+.prezzo-libri-par3{
   font-family: "AfacadRegular", sans-serif;
   font-style: normal;
-  font-size: 18px;      
+  font-size: 18px;
   line-height: 1.7;
+  margin-top: 30px;
+  padding-right: 22%;
 }
 
 
-.layout3 {
+
+
+
+
+.media-section {
   background-color: #fffef6; 
-   display: flex;
-  gap: 348px;                  
-  padding: 80px 90px;         
-  min-height: 100vh;
-  position: relative;              
 }
 
+.media-section-container{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1
+}
 
-.testo3 {
-  flex: 0 0 42%;              
+.media-text {
+  padding-left: 40px;
+  padding-right: 60px;
   color: #c44d4a;
 }
 
-
-.titolo3 h2 {
-  font-family: 'ArsenicaTrial', sans-serif; 
-  font-size: 45px;
+.media-text-titolo h2 {
+  font-family: 'ArsenicaTrial', sans-serif;
+  font-size: 40px;
   font-weight: bold;
   margin: 0;
 }
 
-
-.sottotitolo3 h3 {
+.media-text-sottotitolo{
   font-family: 'AfacadSemiBoldItalic', sans-serif;
-  font-size: 25px;
   font-weight: 700;
   font-style: italic;
-   margin: 8px 0 0 0;
 }
 
+.media-text-sottotitolo h3{
+  font-size: 25px;
+}
 
-.paragrafi3 {
-  margin-top: 80px;           
+.media-text-sottotitolo h3{
+  margin: 0;
+  margin-top: 10px;
+}
+.media-text-paragrafi {
   display: flex;
   flex-direction: column;
-  gap: 25px;                  
-  max-width: 520px;           
   font-family: "AfacadRegular", sans-serif;
   font-size: 18px;
   line-height: 1.7;
 }
 
-
-.colonnadestra {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; 
+.media-text-paragrafi p{
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-
-.immagine3 {
-  position: absolute;    
-  top: 0;                
-  right: 0; 
-  object-fit: cover;          
-  display: block;
-  opacity: 0.7;              
+.media-text-immagine{
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
   overflow: hidden;
 }
 
-
-.immagine3 img {
-  width: 105%;
-  height: auto;
-  object-fit: contain;
-  transform: translateX(-5%);
-  margin-bottom: 120px;
+.media-text-immagine-img {
+  width: 724px;
+  height: 483px;
 }
 
-
-.testodestra {
+.media-text-colonnadestra {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  max-width: 620px;
-  margin: 0;
-  margin-top: 548px;
+  justify-content: end;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.break {
+  flex-basis: 215%;
+  height: 0;
+}
+
+.media-text-testodestra {
+  align-items: flex-end;
   font-family: "AfacadRegular", sans-serif;
   font-size: 18px;
   color: #c44d4a;
-  line-height: 1.7; 
+  line-height: 1.7;
 }
+
+
+
+
+
+
 
 
 .section-footer {
@@ -396,7 +437,7 @@ body {
 
 .footer-box {
   position: absolute;
-  bottom: 20px;            
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
@@ -449,13 +490,13 @@ body {
   border-radius: 30px;
   padding: 15px 40px;
   align-self: flex-start;
-  margin-left: 1600px;   
+  margin-left: 1600px;
 }
 
 
 .footer-newsletter {
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;
   gap: 12px;
 }
 
@@ -491,7 +532,7 @@ body {
 
 .newsletter-arrow img {
   width: 25px;
-  height: 15px; 
+  height: 15px;
   align-items: center;
   justify-content: center;
   margin-left: 357px;
@@ -511,16 +552,17 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 140px;   
+  bottom: 140px;
   left: 50%;
   transform: translateX(-50%);
-  gap: 12px;                 
+  gap: 12px;
 }
 
 
 .line-FAQS {
   position: absolute;
-  bottom: 110px;         /* distanza dal fondo → regolabile */
+  bottom: 110px;
+  /* distanza dal fondo → regolabile */
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 60px);
@@ -533,14 +575,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 27px;     /* stesso bordo sinistra/destra */
-  margin-top: 18px;    /* distanza dalla linea sopra */
+  padding: 0 27px;
+  /* stesso bordo sinistra/destra */
+  margin-top: 18px;
+  /* distanza dalla linea sopra */
 }
 
 
 .nome-sito {
   color: #c44d4a;
-  font-family: 'ArsenicaTrial', sans-serif; 
+  font-family: 'ArsenicaTrial', sans-serif;
   font-size: 11px;
   font-weight: bold;
   list-style: none;
@@ -568,7 +612,7 @@ body {
 .social {
   display: flex;
   align-items: center;
-  gap: 14px; 
+  gap: 14px;
   margin-top: 82px;
 }
 
