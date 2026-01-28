@@ -482,46 +482,22 @@ body {
   padding: 15px 40px;
   margin-bottom: 60px;
   margin-top: 32px;
-  margin-left: 30px;
 }
 
-.newsletter-content {
+.newsletter-section {
   display: flex;
   gap: 10px;
   align-self: flex-start;
 }
 
-.footer-newsletter {
+.newsletter {
   display: flex;
   align-items: flex-end;
   gap: 12px;
 }
 
-.newsletter-arrow {
-  width: 25px;
-  height: 25px;
-}
-
-.newsletter-arrow-img {
-  width: 25px;
-  height: 15px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 357px;
+.newsletter-img {
   display: flex;
-}
-
-.newsletter-text {
-  font-family: "AfacadItalic", sans-serif;
-  font-style: italic;
-  color: #C44D4A;
-  margin-bottom: 4px;
-}
-
-.newsletter-line {
-  width: 344px;
-  height: 3px;
-  background: #C44D4A;
 }
 
 .footer-FAQS-section{
