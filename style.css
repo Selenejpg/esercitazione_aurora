@@ -1,17 +1,14 @@
-/* =========================
+/* =====================================================
    FONT PERSONALIZZATI
-   ========================= */
+   ===================================================== */
 
-/* Font Arsenica - usato per titolo */
 @font-face {
   font-family: 'ArsenicaTrial';
   src: url('fonts/ArsenicaTrial-Bold.woff') format('woff');
   font-weight: 700;
-  /* versione bold */
   font-style: normal;
 }
 
-/* Font Afacad Bold - usato per testi e menu */
 @font-face {
   font-family: 'AfacadBold';
   src: url('fonts/AfacadBold.woff') format('woff');
@@ -20,163 +17,106 @@
 }
 
 
-/* =========================
+/* =====================================================
    RESET BASE
-   ========================= */
+   ===================================================== */
 
-/* 
-   Imposta box-sizing su border-box per tutti gli elementi:
-   padding e bordo vengono inclusi nelle dimensioni
-*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Rimuove il margine di default del browser */
 body {
   margin: 0;
 }
 
 
-/* =========================
-   HEADER PRINCIPALE
-   ========================= */
+/* =====================================================
+   HEADER
+   ===================================================== */
 
-/* Contenitore principale dell’header */
 .section-header {
   display: flex;
-  /* layout orizzontale */
   justify-content: space-between;
-  /* elementi agli estremi */
   align-items: center;
-  /* allineamento verticale */
   padding: 20px;
   background-color: #c44d4a;
-  /* colore di sfondo */
   color: #fffef6;
-  /* colore testo */
 }
 
-
-/* =========================
-   BLOCCO SINISTRO HEADER
-   ========================= */
-
-/* Contiene icona home + testi */
+/* Blocco sinistro: icona home + menu */
 .home-icone {
   display: flex;
   align-items: center;
-  /* centra verticalmente */
   gap: 30px;
-  /* spazio tra gli elementi */
   margin-top: 23px;
 }
 
-
-/* =========================
-   TESTO HEADER
-   ========================= */
-
-/* Menu testuale (es. link di navigazione) */
+/* Menu testuale header */
 .testo-header {
-  font-family: AfacadBold, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
   display: flex;
-  /* disposizione in riga */
   gap: 80px;
-  /* spazio tra le voci */
+  font-family: 'AfacadBold', sans-serif;
+  font-size: 15px;
 }
 
-
-/* =========================
-   ICONE HEADER
-   ========================= */
-
-/* Contenitore delle icone */
+/* Icone header */
 .icone {
   display: flex;
   gap: 15px;
-  /* spazio tra le icone */
 }
 
-/* Inverte il colore delle icone (utile su sfondo scuro) */
 .icone img {
   filter: invert(1);
 }
 
-
-/* =========================
-   TITOLO A DESTRA
-   ========================= */
-
-/* Titolo principale dell’header */
+/* Titolo header */
 .title h1 {
   margin: 0;
-  /* rimuove margine default */
   font-family: 'ArsenicaTrial', sans-serif;
   font-size: 45px;
-  font-weight: 700;
 }
 
-
-/* =========================
-   IMMAGINI / ICONE
-   ========================= */
-
-/* Icona lente e menu */
+/* Icone interattive */
 .lente,
 .menu {
   width: 25px;
   height: 40px;
   cursor: pointer;
-  /* cursore a mano */
 }
 
 
-/* =========================
-   SEZIONE BACKGROUND
-   ========================= */
+/* =====================================================
+   HERO / BACKGROUND
+   ===================================================== */
 
-/* Sezione con immagine di sfondo */
 .vortice {
   width: 100%;
   height: 1000px;
-  /* altezza fissa per rendere visibile l’immagine */
-
   background-image: url("resources/b.jpeg");
   background-size: cover;
-  /* riempie tutta la sezione */
   background-position: center;
-  /* centra l’immagine */
-
   display: flex;
-  justify-content: right;
-  /* contenuto a destra */
-  padding-top: 50px;
-  padding-right: 50px;
+  justify-content: flex-end;
+  padding: 50px;
 }
 
-/* =========================
-   BOTTONI
-   ========================= */
-
-/* Bottone "Accedi" */
+/* Bottone accedi */
 .accedi {
   font-family: 'AfacadBold', sans-serif;
-  background-color: #c44d4a; 
-  border: 0;
-  /* rimuove il bordo */
-  padding: 15px 40px;
-  /* verticale | orizzontale */
+  background-color: #c44d4a;
   color: #fffef6;
+  border: none;
+  padding: 15px 40px;
   border-radius: 30px;
   z-index: 2;
-  /* angoli arrotondati */
 }
 
+
+/* =====================================================
+   SEZIONE CALO LETTORI
+   ===================================================== */
 
 .sezione-calo-lettori {
   display: flex;
@@ -185,130 +125,109 @@ body {
   background-color: #fffef6;
 }
 
-
 .paragrafo-calo-lettori {
   width: 100%;
-  height: auto;
   margin-left: 64px;
-  align-items: flex-start;
 }
-
 
 .titolo-calo-lettori {
-  font-family: 'ArsenicaTrial', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: #c44d4a;
   margin-left: 64px;
   margin-top: 229px;
-  text-align: left;
+  font-family: 'ArsenicaTrial', sans-serif;
+  font-size: 30px;
+  color: #c44d4a;
 }
 
-.titolo-calo-lettori-testo{
+.titolo-calo-lettori-testo {
   margin: 0;
 }
-
 
 .sottotitolo-calo-lettori {
-  margin: 0;
-  margin-top: 4px;
   margin-left: 64px;
+  margin-top: 4px;
   font-family: 'AfacadSemiBoldItalic', sans-serif;
   font-size: 20px;
-  font-weight: 700;
   font-style: italic;
   color: #c44d4a;
-  text-align: left;
 }
 
-.sottotitolo-calo-lettori-testo{
+.sottotitolo-calo-lettori-testo {
   margin: 0;
   padding-bottom: 15px;
 }
 
-
 .testo-calo-lettori {
-  font-family: 'AfacadRegular', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  color: #c44d4a;
   margin-left: 64px;
   margin-top: 16px;
   max-width: 501px;
-  text-align: left;
+  font-family: 'AfacadRegular', sans-serif;
+  font-size: 18px;
+  color: #c44d4a;
 }
 
-.testo-calo-lettori-par1, 
-.testo-calo-lettori-par2, 
+.testo-calo-lettori-par1,
+.testo-calo-lettori-par2,
 .testo-calo-lettori-par3 {
   padding-bottom: 15px;
 }
 
+/* Immagine libreria */
 .book-shelf-div {
   width: 100%;
-  height: auto;
   margin-left: auto;
   margin-top: 229px;
-  object-fit: cover;
-  display: block;
-  align-items: flex-end;
 }
 
 .book-shelf-img {
   width: 100%;
-  height: auto;
   opacity: 0.7;
 }
 
+
+/* =====================================================
+   SEZIONE PREZZO LIBRI
+   ===================================================== */
+
 .prezzo-libri-section {
-  width: 100%;
-  height: auto;
-  background-color: #fffef6;
   display: flex;
   justify-content: space-between;
+  background-color: #fffef6;
 }
 
 .pila-libri {
   width: 100%;
-  height: auto;
   margin-left: 185px;
   opacity: 0.7;
 }
 
-.prezzo-libri-text{
-  min-width: 0;
+.prezzo-libri-text {
   margin-top: 65px;
 }
+
 .prezzo-libri-titolo {
   font-family: 'ArsenicaTrial', sans-serif;
   font-size: 40px;
-  font-weight: bold;
   color: #c44d4a;
   margin: 0;
 }
 
 .prezzo-libri-sottotitolo {
   font-family: 'AfacadSemiBoldItalic', sans-serif;
-  margin: 0;
   font-size: 32px;
-  font-weight: 700;
   font-style: italic;
   color: #c44d4a;
+  margin: 0;
 }
 
 .prezzo-libri-paragrafi {
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  color: #c44d4a;
   margin-top: 40px;
+  color: #c44d4a;
 }
 
 .prezzo-libri-par1,
 .prezzo-libri-par2,
-.prezzo-libri-par3{
-  font-family: "AfacadRegular", sans-serif;
-  font-style: normal;
+.prezzo-libri-par3 {
+  font-family: 'AfacadRegular', sans-serif;
   font-size: 18px;
   line-height: 1.7;
   margin-top: 30px;
@@ -316,18 +235,17 @@ body {
 }
 
 
-
-
-
+/* =====================================================
+   SEZIONE MEDIA
+   ===================================================== */
 
 .media-section {
-  background-color: #fffef6; 
+  background-color: #fffef6;
 }
 
-.media-section-container{
+.media-section-container {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1
 }
 
 .media-text {
@@ -337,44 +255,35 @@ body {
 }
 
 .media-text-titolo h2 {
+  margin: 0;
   font-family: 'ArsenicaTrial', sans-serif;
   font-size: 40px;
-  font-weight: bold;
-  margin: 0;
 }
 
-.media-text-sottotitolo{
+.media-text-sottotitolo h3 {
+  margin-top: 10px;
   font-family: 'AfacadSemiBoldItalic', sans-serif;
-  font-weight: 700;
+  font-size: 25px;
   font-style: italic;
 }
 
-.media-text-sottotitolo h3{
-  font-size: 25px;
-}
-
-.media-text-sottotitolo h3{
-  margin: 0;
-  margin-top: 10px;
-}
 .media-text-paragrafi {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  font-family: "AfacadRegular", sans-serif;
+  font-family: 'AfacadRegular', sans-serif;
   font-size: 18px;
   line-height: 1.7;
-  width: 80%;
 }
 
-.media-text-paragrafi p{
-  margin: 0;
+.media-text-paragrafi p {
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.media-text-immagine{
+/* Immagine sezione media */
+.media-text-immagine {
   width: 55%;
-  height: auto;
   opacity: 0.7;
   overflow: hidden;
 }
@@ -384,9 +293,10 @@ body {
   height: 483px;
 }
 
+/* Colonna destra media */
 .media-text-colonnadestra {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 20px;
 }
 
@@ -396,56 +306,40 @@ body {
 }
 
 .media-text-testodestra {
-  align-items: flex-end;
-  font-family: "AfacadRegular", sans-serif;
+  font-family: 'AfacadRegular', sans-serif;
   font-size: 18px;
-  color: #c44d4a;
   line-height: 1.7;
+  color: #c44d4a;
 }
 
 
-
-
-
-
-
+/* =====================================================
+   FOOTER
+   ===================================================== */
 
 .section-footer {
   position: relative;
   background-color: #fffef6;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-background {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
 }
 
 .footer-background img {
   width: 100%;
-  height: auto;
   opacity: 0.35;
 }
 
 .footer-rettangolo {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #fffef6;
-  border-radius: 16px;
-  margin-bottom: 25px;
+  bottom: 25px;
   left: 20px;
   right: 20px;
+  background-color: #fffef6;
+  border-radius: 16px;
 }
 
+/* Parte superiore footer */
 .parte-superiore {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
   padding-left: 10px;
 }
 
@@ -456,38 +350,37 @@ body {
 
 .footer-menu {
   list-style: none;
+  margin: 25px 0 0 15px;
   padding: 0;
-  margin-left: 15px;
-  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  font-family: "AfacadSemiBold", sans-serif;
-  font-size: 18px;
-  color: #C44D4A;
+  font-family: 'AfacadSemiBold', sans-serif;
+  color: #c44d4a;
 }
 
 .colonna-dx {
+  display: flex;
   flex-direction: column;
- justify-items: right;
- margin-right: 30px;
+  align-items: flex-end;
+  margin-right: 30px;
 }
 
 .footer-button {
   font-family: 'AfacadBold', sans-serif;
-  background-color: #C44D4A;
+  background-color: #c44d4a;
   color: #fffef6;
-  border: 0;
+  border: none;
   border-radius: 30px;
   padding: 15px 40px;
-  margin-bottom: 60px;
   margin-top: 32px;
+  margin-bottom: 60px;
 }
 
+/* Newsletter */
 .newsletter-section {
   display: flex;
   gap: 10px;
-  align-self: flex-start;
 }
 
 .newsletter {
@@ -500,65 +393,53 @@ body {
   display: flex;
 }
 
-.footer-FAQS-section{
+/* FAQ */
+.footer-FAQS-section {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.footer-FAQS{
-  display: flex;        
-  gap: 12px;            
-  font-family: "AfacadSemiBold", sans-serif;
+.footer-FAQS {
+  display: flex;
+  gap: 12px;
+  font-family: 'AfacadSemiBold', sans-serif;
   font-size: 14px;
-  color: #C44D4A;
+  color: #c44d4a;
   padding-top: 20px;
 }
 
 .line-FAQS {
   position: absolute;
-  top: 55%;
-  left: 0;
-  margin-top: 45px;
   left: 25px;
   right: 25px;
+  margin-top: 45px;
   border: 1.5px solid #c44d4a;
 }
 
+/* Parte inferiore footer */
 .parte-inferiore {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 27px;
-  /* stesso bordo sinistra/destra */
   margin-top: 18px;
-  /* distanza dalla linea sopra */
 }
 
 .nome-sito {
-  color: #c44d4a;
   font-family: 'ArsenicaTrial', sans-serif;
   font-size: 11px;
-  font-weight: bold;
-  list-style: none;
-  padding: 0;
+  color: #c44d4a;
   margin-top: 90px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 
 .copyright {
-  text-align: center;
-  color: #C44D4A;
-  font-family: "AfacadSemiBold", sans-serif;
+  font-family: 'AfacadSemiBold', sans-serif;
   font-size: 14px;
+  color: #c44d4a;
   margin-top: 90px;
 }
 
 .social-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 14px;
   margin-top: 82px;
 }
